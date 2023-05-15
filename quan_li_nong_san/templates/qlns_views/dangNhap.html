@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Nhập</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static './css/formdn.css' %}"> 
+    </head>
+    <body>       
+    <div class="container">  
+        <h1>ĐĂNG NHẬP</h1>
+        <form action="/action_page.php">
+            <label for="fname">Tên đăng nhập</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nhập tên đăng nhập..">
+
+            <label for="lname">Mật khẩu</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập mật khẩu..">
+          
+            <input type="submit" value="Đăng Nhập">
+           
+        </form>
+    </div>
+    </body>
+</html>

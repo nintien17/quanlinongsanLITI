@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí nông sản LiTi</title>
+    {% load static %}
+    
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+     <!-- Css Styles -->
+     <link rel="stylesheet" type="text/css" href="{% static './css/blogvitamin.css' %}">
+     <link rel="stylesheet" href="{% static './css/blogbootstrap.min.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/font-awesome.min.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/elegant-icons.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/nice-select.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/jquery-ui.min.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/owl.carousel.min.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/slicknav.min.css' %}" type="text/css">
+     <link rel="stylesheet" href="{% static './css/secondstyle.css' %}" type="text/css">
+</head>
+
+<body>
+<!-- Menu Navigation Bar -->
+<nav class="menu">
+    <a href="#"><img src="{% static './images/logo.png' %}" class="logo"></a>
+    <a class="menu_header" href="{% url 'trangchu' %}">TRANG CHỦ</a>
+    <a class="menu_header" href="{% url 'traicaytuoi' %}">TRÁI CÂY TƯƠI</a>
+    <a class="menu_header" href="{% url 'sanphamkhac' %}">SẢN PHẨM KHÁC</a>
+    <a class="menu_header" href="{% url 'blogvitamin' %}">BLOG VITAMIN</a>
+    <a class="menu_header" href="{% url 'contact' %}">LIÊN HỆ</a>
+    <div class="menu-logcart">
+        <a href="{% url 'cart' %}" target="_blank"><img src="{% static './images/cart.png' %}" class="cart"></a>
+    </div>
+    <div class="menu-log">
+        <a href="{% url 'dangNhap'%} " target="_blank">ĐĂNG NHẬP</a>
+        <a href="{% url 'dangKy' %}" target="_blank">ĐĂNG KÝ</a>       
+    </div> 
+</nav>
+<!-- Body section -->
+    
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Humberger Begin -->
+<div class="humberger__menu__overlay"></div>
+
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="{% static './images/taomy.webp'%}" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
+                                src="img/product/details/thumb-1.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
+                                src="img/product/details/thumb-2.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
+                                src="img/product/details/thumb-3.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
+                                src="img/product/details/thumb-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Táo Envy Mỹ Size 100</h3>
+                        <div class="product__details__price">32.000đ</div>
+                        <p>Táo Envy không chỉ làm người dùng thỏa mãn với hương vị thơm ngon, 
+                            giòn tan khi thưởng thức. Thay vào đó loại táo này còn được biết đến 
+                            có thể tăng cường sức khỏe và làm đẹp cho người dùng. Đây cũng chính 
+                            là lý do hàng đầu giúp loại táo này trở nên thu hút hơn.</p>
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="text" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{% url 'cart' %}" class="primary-btn">THÊM VÀO GIỎ</a>
+                        <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+                        <ul>
+                            <li><b>Trạng thái</b> <span>CÒN HÀNG</span></li>
+                            <li><b>Cân nặng</b> <span>0.5 kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="product__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                                    aria-selected="true">Miêu tả</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                                    aria-selected="false">Thông tin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                                    aria-selected="false">Đánh giá<span>(1)</span></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>THÔNG TIN SẢN PHẨM</h6>
+                                    <p>Cùng là một họ nhà Envy, táo Envy size 100 không có nhiều sự khác biệt so với 
+                                        các loại size khác. Hình dáng táo Envy size 100 có hình trái tim, có màu đỏ 
+                                        ruby và gần cuống có màu xanh lá cây. Vỏ bóng căng mịn, quả bé nhưng chắc thịt, 
+                                        giòn, ngọt và nhiều nước. </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>THÔNG TIN SẢN PHẨM</h6>
+                                    <p>Táo Envy bắt nguồn từ New Zealand, được lai tạo từ giống Royal 
+                                        Gala và Braeburn vào năm 2008. Một năm sau đó, táo Envy được nhân 
+                                        giống và trồng rộng rãi tại nhiều quốc gia, trong đó nông trường lớn 
+                                        nhất là bang Washington của Mỹ. Vì vậy mà hiện nay trên thế giới người 
+                                        ta có 2 cách gọi tên táo Envy là Envy New Zealand và Envy Mỹ được đặt tên theo khu vực trồng.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>THÔNG TIN SẢN PHẨM</h6>
+                                    <p>Đặc điểm chung của giống táo Envy là có hình dáng, 
+                                        mẫu mã rất đẹp mắt. Vỏ quả có màu đỏ ruby hoặc màu rượu vang 
+                                        pha lẫn với màu vàng đậm. Táo Envy có các sọc màu xanh lá cây 
+                                        nhạt ở gần cuống. Quả hơi góc cạnh vuông, không quá tròn như các 
+                                        giống táo Trung Quốc thường thấy. Thịt của táo Envy có màu trắng 
+                                        sữa, thịt táo có thể giữ độ trắng lên đến 10h trước khi bị oxy hoá. 
+                                        Đặc biệt, táo Envy có hương thơm đặc trưng, rất giòn và ngọt, cực kì 
+                                        mọng nước, vì vậy mà chiếm được sự ưu ái lớn từ người tiêu dùng. Táo Envy 
+                                        được đánh giá là một trong các loại táo có độ ngọt và giòn nhất thế giới. 
+                                        Táo Envy được coi là một trong những loại táo cao cấp nhất thế giới hiện nay.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__about__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <h3>VỀ CHÚNG TÔI</h3>
+                    <li>Giảng viên hướng dẫn ThS Bùi Tiến Đức</li>
+                    <li>Công ty ITE ACADEMY</li>
+                    <li>D/c: 101/3D Điện Biên Phủ, P15, Q Bình Thạnh</li>
+                    <li>LITI SHOP - Tận Tâm Với Khách Hàng</li>
+                    <li>Hotline: 07073362117</li>
+                    <li>Tuyển dụng: 0707336217</li>
+                    <li>Bán sỉ: 0707336217</li>
+                    <li>Email: lelinhtien102@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <div class="footer__about__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <h3>FOLLOW CHÚNG TÔI</h3>
+                        <li>Họ tên: Lê Linh Tiến</li>
+                        <li>MSSV: 1900008099</li>
+                        <li>Lớp: 19DTH1C</li>
+                        <li>Facebook: Linh Tiến</li>                 
+                        <li>Instagram: nintien17</li>
+                        <li><img src="{% static './images/bocongthuong.png'%}" class="bocongthuong"></li>   
+                    </ul>
+                </div>
+            </div>       
+            <div class="col-lg-4 col-md-12">
+                <div class="footer__widget">
+                    <h6>Đăng kí nhận thông báo</h6>
+                    <p>Nhập Email để nhận những tin tức khuyến mãi đặc biệt mới nhất cho khách hàng thành viên</p>
+                    <form action="#">
+                        <input type="text" placeholder="Nhập Email..">
+                        <button type="submit" class="site-btn">Đăng kí</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Blog Section End -->
+
+    <!-- Js Plugins -->
+    
+    <script type="text/javascript" src="{% static './js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/jquery.nice-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/jquery.slicknav.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/mixitup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static './js/mainblog.js' %}"></script>
+    
+</body>
+
+</html>

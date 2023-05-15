@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí nông sản LiTi</title>
+
+
+ <!-- CSS Stylesheets -->
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="
+    sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous"> -->
+    
+ 
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static './css/homepage.css' %}">  
+</head>
+
+<body>
+     <header>
+        <div class="head1">WEBSITE QUẢN LÍ NÔNG SẢN DỰA TRÊN GIẢI THUẬT FP-GROWTH</div>
+        <div class="head2">TRÁI CÂY SẠCH NHÀ LITI BÁN</div>
+    </header>
+<!-- Menu Navigation Bar -->
+<nav class="menu">
+    <a href="#"><img src="{% static './images/logo.png' %}" class="logo"></a>
+    <a class="menu_header" href="{% url 'trangchu' %}">TRANG CHỦ</a>
+    <a class="menu_header" href="{% url 'traicaytuoi' %}">TRÁI CÂY TƯƠI</a>
+    <a class="menu_header" href="{% url 'sanphamkhac' %}">SẢN PHẨM KHÁC</a>
+    <a class="menu_header" href="{% url 'blogvitamin' %}">BLOG VITAMIN</a>
+    <a class="menu_header" href="{% url 'contact' %}">LIÊN HỆ</a>
+    <div class="menu-logcart">
+        <a href="{% url 'cart' %}" target="_blank"><img src="{% static './images/cart.png' %}" class="cart"></a>
+    </div>
+    <div class="menu-log">
+        <a href="{% url 'dangNhap'%} " target="_blank">ĐĂNG NHẬP</a>
+        <a href="{% url 'dangKy' %}" target="_blank">ĐĂNG KÝ</a>       
+    </div> 
+</nav>
+<div class="box">
+    <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Search..." />
+    </div>
+</div>  
+<!-- Body section -->
+<main class = "body_section">
+    <section>
+        <marquee direction="right" class="chuchay">CHÀO MỪNG BẠN ĐẾN VỚI LITI SHOP</marquee>
+        <nav>
+            <ul class="nhacc">
+                <h4>NHÀ CUNG CẤP<h4>
+                <li><a class="tennhacc" href="{% url 'nhaccNhatBan' %}" style="color: #079539; text-decoration: none;">NHẬT BẢN</a></li>     
+                <li><a class="tennhacc" href="{% url 'nhaccENVY' %}" style="color: #079539; text-decoration: none;">ENVY</a></li>
+                <li>NEW ZEALAND</li>
+                <li>ANH</li>
+                <li>PHÁP</li>
+                <li>HÀN QUỐC</li>
+                <li>LINHTIEN</li>
+            </ul>
+        </nav>         
+        <div class="qc">
+            <hr>
+            <h1 class="qc">NHÀ CUNG CẤP ENVY</h1>
+            <hr>
+            <div class="flex-container">
+                <div class="bordersp">
+                    <a href="{% url 'fruitsdetail' %}"><img src="{% static './images/taomy.webp'%}" class="mathang"></a>
+                    <div class="sp">
+                        <a href="{% url 'fruitsdetail' %}" class="tensp">Táo Envy Mỹ Size 100</a>
+                        <p class="tensp2">32.000đ</p>
+                        <a href="{% url 'cart' %}"><button class="btn_mua">Mua Ngay</button></a>
+                    </div>
+                </div>
+                <div class="bordersp">
+                    <a href="{% url 'fruitsdetail' %}"><img src="{% static './images/taomy70.webp'%}" class="mathang"></a>
+                    <div class="sp">
+                        <a href="{% url 'fruitsdetail' %}" class="tensp">Táo Envy Mỹ Size 70</a>
+                        <p class="tensp2">47.000đ</p>
+                        <a href="{% url 'cart' %}"><button class="btn_mua">Mua Ngay</button></a>
+                    </div>
+                </div>
+                <div class="bordersp">
+                    <a href="{% url 'fruitsdetail' %}"><img src="{% static './images/taomy24.webp'%}" class="mathang"></a>
+                    <div class="sp">
+                        <a href="{% url 'fruitsdetail' %}" class="tensp">Táo Envy Mỹ Size 24</a>
+                        <p class="tensp2">105.000đ</p>
+                        <a href="{% url 'cart' %}"><button class="btn_mua">Mua Ngay</button></a>
+                    </div>
+                </div>                   
+            </div> 
+        </div> 
+        <hr>        
+    </section>
+</main>
+<footer>
+    <section class="footer-container">
+        <div class="#">
+            <div class="#">
+                <ul class="thongtinfooter">
+                    <h3>THÔNG TIN CHUNG</h3>
+                    <li>Giới thiệu</li>
+                    <li>Liên Hệ</li>
+                    <li>Thanh toán</li>
+                    <li>Chính sách thanh toán</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách tích điểm</li>
+                    <li>Điều khoản dịch vụ</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+        </div>
+        <div class="#">
+            <div class="#">
+                <ul class="thongtinfooter">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <li>Giảng viên hướng dẫn ThS Bùi Tiến Đức</li>
+                    <li>Công ty ITE ACADEMY</li>
+                    <li>D/c: 101/3D Điện Biên Phủ, P15, Q Bình Thạnh</li>
+                    <li>LITI SHOP - Tận Tâm Với Khách Hàng</li>
+                    <li>Hotline: 07073362117</li>
+                    <li>Tuyển dụng: 0707336217</li>
+                    <li>Bán sỉ: 0707336217</li>
+                    <li>Email: lelinhtien102@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="#">
+            <div class="#">
+                <ul class="thongtinfooter">
+                    <h3>HỆ THỐNG CỬA HÀNG</h3>
+                    <li>Đường Vườn Lài, phường An Phú Đông, quận 12</li>
+                    <li>Ấp Tân Lợi, xã Tân Thành, Lai Vung, Đồng Tháp</li>
+                </ul>
+            </div>
+        </div>
+        <div class="#">
+            <div class="#">
+                <ul class="thongtinfooter">
+                    <h3>FOLLOW CHÚNG TÔI</h3>
+                    <li>Họ tên: Lê Linh Tiến</li>
+                    <li>MSSV: 1900008099</li>
+                    <li>Lớp: 19DTH1C</li>
+                    <li>Facebook: Linh Tiến</li>                 
+                    <li>Instagram: nintien17</li>
+                    <li><img src="{% static './images/bocongthuong.png'%}" class="bocongthuong"></li>                 
+                </ul>
+            </div>
+        </div>        
+    </section>
+</footer>
+<marquee direction=”right” onmouseover="stop()" onmouseout="start()"> LITI SHOP XIN CẢM ƠN QUÝ KHÁCH</marquee>
+<script type="text/javascript" src="{% static './js/script.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static './js/home.js' %}"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

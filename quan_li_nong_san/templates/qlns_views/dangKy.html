@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Ký</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{%static './css/formdk.css' %}"> 
+    </head>
+    <body>     
+    <div class="container">
+        <h1>ĐĂNG KÝ</h1>
+        <form action="/action_page.php">
+            <label for="fname">Email</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nhập Email..">
+
+            <label for="lname">Tên đăng nhập</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập tên đăng nhập..">
+
+            <label for="lname">Mật khẩu</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập mật khẩu..">
+
+            <label for="lname">Nhập họ tên</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập họ tên..">
+
+            <label for="lname">Ngày sinh</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập ngày sinh..">
+
+            <label for="lname">Địa chỉ</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập địa chỉ..">
+
+            <label for="lname">Số điện thoại</label>
+            <input type="text" id="lname" name="lastname" placeholder="Nhập số điện thoại..">
+
+            <input type="submit" value="Đăng Ký">
+            
+        </form>
+    </div>
+    </body>
+</html>

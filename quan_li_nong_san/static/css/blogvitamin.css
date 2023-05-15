@@ -1,0 +1,246 @@
+body {
+    background-color: #a4e4a1;font-family: arial,sans-serif;
+    background-position:center;
+    background-size: contain;
+    padding: 0px;
+    margin: 0px;
+}
+
+.head1 {
+    font-size:40px;
+    color:#009900;
+    font-weight:bold;
+    text-align: center;
+}
+.head2 {
+    font-size:25px;  
+    margin-bottom:15px;
+    color:#009900;
+    text-align: center;
+}
+body {
+    margin: 0 auto;
+    background-position:center;
+    background-size: contain;
+}
+.menu { 
+    position: sticky; /* fixed menu top */
+    top: 0;
+    background-color: #079539;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu a {
+    float: left;
+    color: #ffffff;
+    font-weight:bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* xoa gach chan */
+    font-size: 20px;
+}
+.logo{
+    width: 125px;
+    height: 100px;
+}
+.menu_header {
+    margin-top: 38px;
+}
+.menu-log {
+    right: auto;
+    float: right;
+    margin-top: 38px; 
+}
+.menu-logcart {
+    right: auto;
+    float: right;
+    margin-top: 30px; 
+}
+.cart{
+    width: 40px;
+    height: 40px;    
+}   
+.chuchay{  
+    font-size:25px;
+    color:  #079539;
+    padding: 16px;
+    
+}
+.chuchay2{
+    text-align: center;
+    font-size:20px;
+    color:  #079539;
+    padding: 16px;
+}
+
+.nhacc{
+    float: left;
+    padding: 30px;
+    height: 450px;
+    background:white;
+    list-style: none;
+    color:#079539;
+    line-height: 48px;
+    font-size:20px; 
+}
+
+.banner{
+    padding-top: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 400px;
+}
+.quatet{
+    color: rgb(158, 155, 66);
+}
+.banner2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1320px;
+    height: 650px;
+}
+.camket-chatluong{ 
+    color: #079539;
+    display: block;
+    background-color: #b9ffc2;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+    text-decoration: none;
+    width: 700px;
+}
+.qc{
+    font-size:25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.mathang{
+    width: 300px;
+    padding: 8px;
+}
+.tensp{
+    display: block;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #89bf00;
+    font-size:30px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.tensp2{
+    font-size:25px;
+    color: #ffffff;
+}
+.sp{
+    text-align: center;
+}
+
+.btn_mua{
+    background-color: #ff5550;
+    border-radius: 5px;
+    color: #66ff2f;
+    border: 1px solid green;
+    padding: 10px 30px;
+    margin-bottom: 16px;
+}
+.btn_mua:hover {
+    background-color:#cc4c16;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bordersp{
+    border: 1px solid;
+    color:#ffffff;
+     
+}
+hr{
+    height: 3px;
+    width: 1275px;
+    background-color: #079539;
+}
+
+footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: #356245;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size:18px;
+}
+.thongtinfooter {    
+    list-style: none;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row; /* ngang */
+    flex-wrap: wrap; /* bọc lại khi kích thước thay đổi */
+    justify-content: center;
+}
+
+/* search */
+.box{
+    margin: 15px auto;
+    width: 600px;
+    height: 50px;
+  }
+  
+  /* Search 1 - bg change*/
+  .container-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+  .container-1 input#search{
+    width: 600px;
+    height: 50px;
+    background: #079539;
+    border: none;
+    font-size: 10pt;
+    float: left;
+      color: #262626;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+  }
+  
+  .container-1 input#search::-webkit-input-placeholder {
+     color: white;
+  }
+  .container-1 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: rgb(255, 145, 0);
+  }
+  
+    /* ANIMATION EFFECTS */
+    .container-1 input#search:focus, .container-1 input#search:active{
+      outline:none;
+      background: #ffffff;
+    }
+
+    
+
